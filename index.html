@@ -1,84 +1,718 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/sayorama-site/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+    />
     
-    <script type="module" crossorigin src="/sayorama-site/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/sayorama-site/assets/index-10c40100.css">
+    <title>Vite App</title>
+    <script type="module" crossorigin src="/sayorama-site/assets/index-a6bc3a4d.js"></script>
+    <link rel="stylesheet" href="/sayorama-site/assets/index-48d11d2a.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+    <header id="header" class="header">
+  <div class="container header-container">
+    <a href="">
+      <div class="logo-container">
+        <img
+          class="logo-icon"
+          src="../img/header/logo_icon.svg"
+          alt="logo icon"
+        />
+        <img
+          class="logo-text"
+          src="../img/header/logo_txt .svg"
+          alt="logo text"
+        />
+      </div>
+    </a>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/sayorama-site/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#about-us" class="nav-link">About us</a>
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
+        <li class="nav-item">
+          <a href="#" class="nav-link">Products</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Demo</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Invest</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Partnership</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Career</a>
         </li>
       </ul>
-    </div>
+    </nav>
+    <a href="#">
+      <div class="contact-us-ref">Contact us</div>
+    </a>
+  </div>
+</header>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/sayorama-site/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
+    <main>
+      <section id="hero" class="hero">
+  <div class="hero-container container">
+    <h1 class="hero-title">
+      <span class="hero-title__first">We are</span>
+      <span class="hero-title__second">creating the</span>
+      <span class="hero-title__first">future</span>
+      <span class="hero-title__second">of buisiness</span>
+      <span class="hero-title__first">communications</span>
+    </h1>
+    <p class="hero-text">
+      It is currently in closed beta testing. Want to learn more or invest?
+    </p>
+    <a href="#">
+      <div class="app-link">
+        <span class="app-link__text">Get in touch</span>
+        <img
+          class="app-link__icon"
+          src="../img/hero/Ads-click.svg"
+          alt="arrow_pointer"
+        />
+      </div>
+    </a>
+    <ul class="hero-socials">
+      <li class="socials-item">
+        <a href="#" class="socials-link">
+          <img
+            class="socials-icon"
+            src="../img/socials/linkedin.svg"
+            alt="linkedin"
+          />
+        </a>
+      </li>
+      <li class="socials-item">
+        <a href="#" class="socials-link">
+          <img
+            class="socials-icon"
+            src="../img/socials/youtube.svg"
+            alt="youtube"
+          />
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section id="about-us" class="about-us">
+  <div class="container about-container">
+    <h2 class="about-title">About us</h2>
+    <p class="about-intro">
+      Welcome to Sayorama - a passionate Ukrainian cross-functional team
+      dedicated to building digital products that matter.
+    </p>
+    <p class="about-story">
+      What started as a small pet project, driven by the idea of helping small
+      businesses communicate better, has grown into a mission.
+    </p>
+
+    <p class="about-mission">
+      Today, we design and develop intuitive, impactful digital solutions that
+      don't just make life easier - they have the power to reshape the way
+      people connect, collaborate, and grow.
+    </p>
+    <h3 class="team-title">Our team members</h3>
+    <ul class="team-list">
+      <li class="role-card">
+        <div class="img-thumb">
+          <img src="../img/about-us/android.svg" alt="android developer" />
+        </div>
+        <h4 class="team-role">Android developer</h4>
+        <p class="role-description">
+          Mobile development for the Android platform is carried out using the
+          Flutter framework
+        </p>
+      </li>
+      <li class="role-card">
+        <div class="img-thumb">
+          <img src="../img/about-us/iOs.svg" alt="iOS developer" />
+        </div>
+        <h4 class="team-role">IOS developer</h4>
+        <p class="role-description">
+          Mobile development for the iOS platform is carried out using the Swift
+          programming language
+        </p>
+      </li>
+      <li class="role-card">
+        <div class="img-thumb">
+          <img src="../img/about-us/QA.svg" alt="QA tester" />
+        </div>
+        <h4 class="team-role">QA tester</h4>
+        <p class="role-description">
+          Manual and automated testing are performed to ensure software quality,
+          stability, and user satisfaction.
+        </p>
+      </li>
+      <li class="role-card">
+        <div class="img-thumb">
+          <img src="../img/about-us/designer.svg" alt="ux/ui designer" />
+        </div>
+        <h4 class="team-role">UX/UI designer</h4>
+        <p class="role-description">
+          "Anyone can play around with fonts, but turning chaos into a
+          convenient user experience is my true talent and superpower as a
+          systematic UX/UI designer."
+        </p>
+      </li>
+      <li class="role-card">
+        <div class="img-thumb">
+          <img src="../img/about-us/backend.svg" alt="backend developer" />
+        </div>
+        <h4 class="team-role">Backend developer</h4>
+        <p class="role-description">
+          Server-side logic, databases, and APIs are developed to power
+          application functionality and performance.
+        </p>
+      </li>
+      <li class="role-card">
+        <div class="img-thumb">
+          <img src="../img/about-us/frontend.svg" alt="frontend developer" />
+        </div>
+        <h4 class="team-role">Frontend developer</h4>
+        <p class="role-description">
+          User interfaces are built with modern frameworks to ensure responsive,
+          accessible, and engaging web experiences.
+        </p>
+      </li>
+      <li class="role-card">
+        <div class="img-thumb">
+          <img src="../img/about-us/PM.svg" alt="project manager" />
+        </div>
+        <h4 class="team-role">Project manager</h4>
+        <p class="role-description">
+          Projects are planned, coordinated, and delivered on time by aligning
+          team efforts with client goals and expectations.
+        </p>
+      </li>
+      <li class="role-card">
+        <div class="img-thumb">
+          <img src="../img/about-us/busines-analyst.svg" alt="" />
+        </div>
+        <h4 class="team-role">Business analyst</h4>
+        <p class="role-description">
+          Business needs are identified and translated into clear requirements
+          to align product development with client goals.
+        </p>
+      </li>
+
+      <li class="role-card">
+        <div class="img-thumb">
+          <img src="../img/about-us/DevOps.svg" alt="" />
+        </div>
+        <h4 class="team-role">DevOps engineer</h4>
+        <p class="role-description">
+          Infrastructure, CI/CD, and cloud deployment are streamlined for
+          reliable software delivery.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section id="product" class="product">
+  <h2 class="product-title">Our Flagman Product</h2>
+  <div class="product-container container">
+    <div class="content-wrapper">
+      <div class="product-description">
+        <p>
+          We proudly present
+          <span class="highlighted"
+            >SayHub - a secure communication platform</span
+          >
+          designed to protect your data and give business owners complete
+          control over their information.
+        </p>
+        <p>
+          But security is just the foundation. SayHub goes further by
+          integrating essential business tools - from calendars and task
+          tracking to a smart AI assistant - creating an environment where
+          communication and productivity work together effortlessly.
+        </p>
+        <p>
+          <span class="highlighted">Our mission is clear:</span> to deliver a
+          secure, customizable, and multifunctional platform tailored
+          specifically to the needs of small businesses, empowering them to
+          thrive in a fast-changing digital world.
+        </p>
+      </div>
+      <div class="product-img">
+        <img src="../img/product/Product-desktop.png" alt="app on mobile" />
+      </div>
     </div>
   </div>
 </section>
 
+      <section id="features">
+  <div class="container features-container">
+    <h2 class="features-title">
+      Our product's Key Features & Differentiation:
+    </h2>
+    <ul class="features-list">
+      <li class="features-item">
+        <img
+          class="features-item-icon"
+          src="../img/features/encrypted.svg"
+          alt="encrypted"
+        />
+        <div class="features-item-info">
+          <h3 class="features-item-title">
+            1. Enterprise-Grade Security & Data Control
+          </h3>
+          <p class="features-item-description">
+            Full control over company data and storage options
+          </p>
+          <p class="features-item-description">
+            Secret chat functionality for confidential discussions
+          </p>
+          <p class="features-item-description">
+            Role-based access to grant appropriate permissions
+          </p>
+        </div>
+      </li>
+      <li class="features-item">
+        <img
+          class="features-item-icon"
+          src="../img/features/networking.svg"
+          alt="networking"
+        />
+        <div class="features-item-info">
+          <h3 class="features-item-title">
+            2. Smooth Communication & Organization
+          </h3>
+          <p class="features-item-description">
+            Text, voice, and video messaging. Ability to send
+            images/videos/links and other standard media.
+          </p>
+          <p class="features-item-description">
+            Private and group chats for various internal discussions. Ability to
+            sort your chats using separate topic-based tabs
+          </p>
+          <p class="features-item-description">
+            Required news department/team-wide channels
+          </p>
+        </div>
+      </li>
+      <li class="features-item">
+        <img
+          class="features-item-icon"
+          src="../img/features/gear.svg"
+          alt="gear"
+        />
+        <div class="features-item-info">
+          <h3 class="features-item-title">
+            3. Integrated Business Tools for Productivity
+          </h3>
+          <p class="features-item-description">
+            Built-in calendar and task tracking system
+          </p>
+          <p class="features-item-description">
+            AI-powered assistant for automated responses and scheduling
+          </p>
+          <p class="features-item-description">
+            Notification on keywords, filtering messages by keywords
+          </p>
+        </div>
+      </li>
+      <li class="features-item">
+        <img
+          class="features-item-icon"
+          src="../img/features/modules.svg"
+          alt="modules"
+        />
+        <div class="features-item-info">
+          <h3 class="features-item-title">
+            3. Integrated Business Tools for Productivity
+          </h3>
+          <p class="features-item-description">
+            Eliminates the need for multiple third-party tools
+          </p>
+          <p class="features-item-description">
+            Customizable interface to match company branding and workflow needs
+          </p>
+          <p class="features-item-description">
+            Combines communication, task management, and scheduling in one
+            secure platform
+          </p>
+        </div>
+      </li>
+    </ul>
+    <button type="button" class="features-button">More details</button>
+  </div>
+</section>
+
+      <section id="demo" class="demo">
+  <div class="demo-container container">
+    <div class="content-wrapper">
+      <button type="button" class="play-btn">
+        <img class="icon" src="../img/demo/play-btn.svg" alt="play" />
+        <p class="text">Watch our product demo</p>
+      </button>
+      <div class="player"></div>
+    </div>
+  </div>
+</section>
+
+      <section id="investments" class="investments">
+  <div class="investments-container container">
+    <h2 class="investments-title">Why Invest in Us?</h2>
+    <p>
+      Join us in building the future of business communication. With SayHub,
+      you're not just investing in tech - you're investing in a vision that
+      empowers small businesses to grow, connect, and succeed.
+    </p>
+    <ul>
+      <li>
+        <h3>Scalable & Flexible Business Model</h3>
+        <p>
+          Our model is based on subscriptions with optional premium features.
+          Thanks to its modular structure, the product can be scaled across
+          industries and can be customized for different needs - from small
+          local shops to medium-size service providers
+        </p>
+      </li>
+      <li>
+        <h3>A Growing Market</h3>
+        <p>
+          The demand for secure corporate communication and integrated business
+          tools for small businesses is expanding every year. We target a niche
+          where big players are too expensive, while cheaper solutions lack
+          reliability
+        </p>
+      </li>
+      <li>
+        <h3>Unique Value Proposition</h3>
+        <p>
+          SayHub combines data security, full control for business owners, and
+          integration of essential tools (calendar, task management, AI
+          assistant). It's not just another messenger - it's a complete business
+          ecosystem
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="banner">
+  <div class="container">
+    <img
+      class="banner-img"
+      src="../img/banner/3d-render-todo.png"
+      alt="3d-render-todo"
+    />
+    <p class="banner-text">
+      Be part of the next game-changer - fill in the form and invest in Sayorama
+      today.
+    </p>
+    <a class="form-link" href="#">
+      <div class="form-link__wrapper">
+        <span class="form-link__text">Go to form</span>
+        <img
+          class="form-link__icon"
+          src="../img/hero/Ads-click.svg"
+          alt="arrow_pointer"
+        />
+      </div>
+    </a>
+  </div>
+</section>
+
+      <section id="partnership" class="partnership">
+  <div class="container">
+    <h2 class="partnership-title">Partner Program</h2>
+    <div class="content-wrapper">
+      <img
+        class="partnership-img"
+        src="../img/partnership/partners.jpg"
+        alt="partnership"
+      />
+      <div class="partnership-description">
+        <p class="partnership-intro">
+          At Sayorama, we are open to collaborations with companies and
+          organizations that share our vision of innovation and growth. We
+          welcome partners who provide services, expertise, or resources that
+          help us move faster and build better products.
+        </p>
+        <h3 class="benefits-title">Benefits of Partnering with Us</h3>
+        <ul class="benefits">
+          <li class="benefits-item">
+            <p class="benefits-description">
+              <span class="highlighted">Exchange of Value</span> - we believe in
+              winwin collaboration: your support helps us grow, and in return we
+              create opportunities for your brand
+            </p>
+          </li>
+          <li class="benefits-item">
+            <p class="benefits-description">
+              <span class="highlighted">Long-Term Relationship</span> - we aim
+              to build partnerships that go beyond one-time cooperation
+            </p>
+          </li>
+          <li class="benefits-item">
+            <p class="benefits-description">
+              <span class="highlighted">Shared Impact</span>Shared Impact - by
+              joining forces, we contribute to shaping the future of digital
+              communication together
+            </p>
+          </li>
+        </ul>
+        <p class="partnership-cta">
+          Let's grow together - partner with Sayorama and be a part of digital
+          changes!
+        </p>
+        <a href="#">
+          <div class="contact-us">Contact us</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="career" class="career">
+  <div class="container">
+    <h2 class="career-title">Career in Our Company</h2>
+    <div class="careers-intro">
+      <p class="careers-intro__mission">
+        We are always on the lookout for talented and motivated people who want
+        to make an impact and boost their skills
+      </p>
+      <p class="careers-intro__audience">
+        Whether you're a junior specialist eager to gain hands-on,
+        corporate-like experience, or a mid-to-senior professional ready to
+        experiment with bold ideas and innovative techniques - there's a place
+        for you at Sayorama
+      </p>
+    </div>
+    <h2 class="vacancy-title">We are looking for:</h2>
+    <div class="careers-container">
+      <!-- Левая колонка -->
+      <ul class="vacancy-list">
+        <li data-vacancy="python" class="vacancy-list-item active">
+          <h3 class="vacancy-list-item__title">Backend Python Developer</h3>
+          <p class="vacancy-list-item__description">Part-time.</p>
+        </li>
+        <li data-vacancy="react" class="vacancy-list-item">
+          <h3 class="vacancy-list-item__title">Frontend React Developer</h3>
+          <p class="vacancy-list-item__description">Part-time.</p>
+        </li>
+        <li data-vacancy="flutter" class="vacancy-list-item">
+          <h3 class="vacancy-list-item__title">Android Flutter Developer</h3>
+          <p class="vacancy-list-item__description">Part-time.</p>
+        </li>
+        <li data-vacancy="marketing" class="vacancy-list-item">
+          <h3 class="vacancy-list-item__title">Marketing Specialist</h3>
+          <p class="vacancy-list-item__description">Part-time.</p>
+        </li>
+      </ul>
+
+      <!-- Правая колонка -->
+      <div class="vacancy-details">
+        <div class="vacancy-content active" id="python">
+          <p class="vacancy-content__description">
+            To strengthen our backend team, we are looking for a pre-mid-level
+            developer to gain invaluable experience on a real project.
+            <br /><br />
+            We would also welcome an experienced mentor to advise our backend
+            developers on a permanent basis or for several sessions
+          </p>
+          <ul class="requirements">
+            <li class="requirements-item">
+              <img src="../img/career/Python.svg" alt="python" />
+            </li>
+            <li class="requirements-item">
+              <img src="../img/career/FastAPI.svg" alt="FastAPI" />
+            </li>
+            <li class="requirements-item">
+              <img src="../img/career/Git.svg" alt="Git" />
+            </li>
+          </ul>
+        </div>
+
+        <div class="vacancy-content" id="react">
+          <p class="vacancy-content__description">
+            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam
+          </p>
+        </div>
+
+        <div class="vacancy-content" id="flutter">
+          <p class="vacancy-content__description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
+            iusto quod libero fugiat, reprehenderit ipsam earum consequatur,
+            harum enim eveniet deleniti perferendis? Asperiores possimus ex enim
+            corporis neque fuga quibusdam?
+          </p>
+        </div>
+
+        <div class="vacancy-content" id="marketing">
+          <p class="vacancy-content__description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi eum
+            sit fugiat maxime deleniti at, aperiam porro minus. Soluta, error
+            repellat architecto autem perferendis fugit atque quo cumque eaque
+            adipisci.
+          </p>
+        </div>
+        <div class="invitation">
+          <p class="invitation__text">
+            Come build the future of business communication with us Fill out the
+            form below and become part of our team
+          </p>
+          <a href="#" class="invitation__link">
+            <img
+              class="invitation__icon"
+              src="../img/career/arrow.svg"
+              alt="link arrow"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="contactUs" class="contactUs">
+  <h2 class="contact-title">Contact Us</h2>
+  <div class="container">
+    <form class="contact-form">
+      <label>
+        Select the subject of your request*:
+        <select required>
+          <option value="">The drop-down list</option>
+          <option value="support">Support</option>
+          <option value="partnership">Partnership</option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+
+      <label>
+        Your e-mail*:
+        <div class="input-wrapper">
+          <input type="email" placeholder="name@gmail.com" required />
+        </div>
+      </label>
+
+      <label>
+        Your phone*:
+        <div class="input-wrapper">
+          <input type="tel" placeholder="+00 000 0000000" required />
+        </div>
+      </label>
+
+      <label>
+        Your question/suggestion:
+        <input
+          type="text"
+          placeholder="Short text (max 150 characters)"
+          maxlength="150"
+        />
+      </label>
+
+      <button type="submit" class="btn-send">Send</button>
+    </form>
+
+    <p class="contact-text">
+      Let's create the future<br />
+      <span class="highlight">of business communications</span>
+      together!
+    </p>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <a href="#">
+      <div class="footer-logo-container">
+        <img
+          class="logo-icon"
+          src="../img/header/logo_icon.svg"
+          alt="logo icon"
+        />
+        <img
+          class="logo-text"
+          src="../img/header/logo_txt .svg"
+          alt="logo text"
+        />
+      </div>
+    </a>
+
+    <nav class="footer-nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#about-us" class="nav-link">About us</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Partnership</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Products</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Career</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Demo</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Invest</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="footer-socials">
+      <h3 class="socials-title">Our social media:</h3>
+      <ul class="socials-list">
+        <li class="socials-item">
+          <a href="#" class="socials-link">
+            <img
+              class="socials-icon"
+              src="../img/socials/linkedin.svg"
+              alt="linkedin"
+            />
+          </a>
+        </li>
+        <li class="socials-item">
+          <a href="#" class="socials-link">
+            <img
+              class="socials-icon"
+              src="../img/socials/youtube.svg"
+              alt="youtube"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="subscribe">
+      <p class="subscribe-text">
+        Leave your email below - we'll get in touch and explore how you can
+        become part of Sayorama's journey:
+      </p>
+      <div class="input-wrapper">
+        <input
+          class="subscribe-input"
+          type="email"
+          placeholder="name@gmail.com"
+        />
+      </div>
+    </div>
+  </div>
+  <p class="copyright">© Sayorama LCC, 2025</p>
+</footer>
 
     
   </body>
