@@ -1,0 +1,187 @@
+.career .container {
+  padding-bottom: 120px;
+}
+
+.career-title {
+  margin-bottom: 48px;
+
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--dark-text);
+}
+
+.careers-intro {
+  max-width: 966px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.1;
+  color: var(--dark-text);
+  .careers-intro__mission {
+    flex-basis: 399px;
+  }
+
+  .careers-intro__audience {
+    flex-basis: 427px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+/* added */
+
+.vacancy-title {
+  margin-bottom: 24px;
+
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--dark-text);
+}
+
+.careers-container {
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Левая колонка */
+.vacancy-list {
+  flex-basis: 368px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.vacancy-list li {
+  height: 144px;
+  border-radius: 4px;
+  padding: 24px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &:hover,
+  &.active {
+    color: var(--light-text);
+    background: linear-gradient(0deg, #5d97ec 0%, #0287df 59.13%, #045e99 100%);
+    .vacancy-list-item__description {
+      color: var(--light-text);
+    }
+  }
+}
+
+.vacancy-list li::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  margin-bottom: 16px;
+
+  background: linear-gradient(90deg, #5a92eb 0%, #fe37a3 100%);
+}
+
+.vacancy-list-item__title {
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.vacancy-list-item__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1;
+  color: var(--muted-text-and-element);
+}
+
+/* Правая колонка */
+.vacancy-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 759px;
+}
+
+.vacancy-content {
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+.vacancy-content.active {
+  display: block;
+  position: relative;
+  padding: 8px 16px;
+}
+
+.vacancy-content.active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(0deg, #5a92eb 0%, #fe37a3 100%);
+}
+
+.vacancy-content__description {
+  margin-bottom: 24px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.requirements {
+  display: flex;
+  column-gap: 8px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.invitation {
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.invitation__text {
+  flex-basis: 541px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.invitation__icon {
+  width: 48px;
+  height: 45px;
+}

@@ -1,24 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Vite App</title>
   </head>
   <body>
-    <load ="partials/header.html" />
-
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
-
+    <load src="partials/header.html" />
+    <main>
+      <load src="partials/hero.html" />
+      <load src="partials/about-us.html" />
+      <load src="partials/product.html" />
+      <load src="partials/features.html" />
+      <load src="partials/demo.html" />
+      <load src="partials/investments.html" />
+      <load src="partials/banner.html" />
+      <load src="partials/partnership.html" />
+      <load src="partials/career.html" />
+      <load src="partials/contact-us.html" />
+    </main>
+    <load src="partials/footer.html" />
     <script type="module" src="/main.js"></script>
   </body>
 </html>

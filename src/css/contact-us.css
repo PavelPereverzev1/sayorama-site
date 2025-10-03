@@ -1,0 +1,105 @@
+.contactUs {
+  padding-bottom: 120px;
+  .container {
+    padding-top: 56px;
+    padding-bottom: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-image: url('../img/contact-us/bg-img.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.contact-title {
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--dark-text);
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form {
+  flex-basis: 352px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1;
+  color: var(--light-text);
+}
+
+.contact-form input,
+.contact-form select {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper input {
+  padding-right: 35px;
+}
+
+.input-wrapper .icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.btn-send {
+  display: block;
+  width: 170px;
+  height: 49px;
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 16px;
+
+  border: 2px solid var(--blur-color);
+  border-radius: 8px;
+
+  background: var(--button-border);
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--dissable-fill);
+}
+
+.btn-send:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.contact-text {
+  flex-basis: 660px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--light-text);
+}
+
+.contact-text .highlight {
+  color: var(--muted-text-and-element);
+}

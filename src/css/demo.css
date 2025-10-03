@@ -1,0 +1,67 @@
+.demo-container {
+  padding: 120px 0;
+
+  .content-wrapper {
+    outline: 1px solid red;
+    background-image: url('../img/demo/Decor.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    display: flex;
+    column-gap: 90px;
+    max-width: 1116px;
+    aspect-ratio: 1.634;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.play-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 162px;
+  height: 124px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 15%;
+    margin-left: 2.5%;
+  }
+
+  @media screen and (min-width: 1230px) {
+    margin-top: 15.5%;
+    margin-left: 2.7%;
+  }
+
+  @media screen and (min-width: 1300px) {
+    margin-top: 15.75%;
+    margin-left: 3%;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-top: 16%;
+    margin-left: 3.4%;
+  }
+
+  .icon {
+    width: 64px;
+    height: 64px;
+  }
+  .text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.1;
+    text-align: center;
+    color: var(--dark-text);
+  }
+}
+
+.player {
+  background-color: #000;
+  max-width: 738px;
+  height: 520px;
+  flex-grow: 1;
+}
