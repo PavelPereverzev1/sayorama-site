@@ -61,41 +61,35 @@
   }
 }
 .socials-list {
-  @media screen and (min-width: 1024px) {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-  }
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
 
 .subscribe {
-  @media screen and (min-width: 1024px) {
-    flex-basis: 412px;
+  flex-basis: 412px;
 
-    .subscribe-text {
-      margin-bottom: 16px;
+  .subscribe-text {
+    margin-bottom: 16px;
 
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 1.1;
-    }
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1;
   }
 }
 
 .subscribe-input {
-  @media screen and (min-width: 1024px) {
-    border: 1px solid var(--button-border);
-    border-radius: 6px;
-    padding: 12px 8px;
-    width: 352px;
-    height: 48px;
-    background: var(--background);
-    &::placeholder {
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 1.1;
-      color: var(--muted-text-and-element);
-    }
+  border: 1px solid var(--button-border);
+  border-radius: 6px;
+  padding: 12px 8px;
+  width: 352px;
+  height: 48px;
+  background: var(--background);
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1;
+    color: var(--muted-text-and-element);
   }
 }
 
