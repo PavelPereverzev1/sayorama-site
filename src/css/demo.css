@@ -2,7 +2,6 @@
   padding: 120px 0;
 
   .content-wrapper {
-    outline: 1px solid red;
     background-image: url('../img/demo/Decor.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -60,6 +59,7 @@
 }
 
 .player {
+  margin-top: 94px;
   background-color: #000;
   max-width: 738px;
   height: 520px;
