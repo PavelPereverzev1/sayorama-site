@@ -1,12 +1,12 @@
 .about-container {
   padding: 120px 0;
-  background-image: url('./img/about-us/bg-top.svg');
+  background-image: url('../img/about-us/bg-top.svg');
   background-repeat: no-repeat;
   background-size: 1440px 265px;
   background-position: center -7px;
 
   @media (min-width: 1440px) {
-    background-image: url('./img/about-us/bg-top-big.svg');
+    background-image: url('../img/about-us/bg-top-big.svg');
     background-size: 1920px 265px;
     background-position: center -72px;
   }
