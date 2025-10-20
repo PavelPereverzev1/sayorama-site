@@ -10,13 +10,13 @@
     />
     
     <title>Vite App</title>
-    <script type="module" crossorigin src="/sayorama-site/assets/index-a6bc3a4d.js"></script>
-    <link rel="stylesheet" href="/sayorama-site/assets/index-9b04714c.css">
+    <script type="module" crossorigin src="/sayorama-site/assets/index-2db02022.js"></script>
+    <link rel="stylesheet" href="/sayorama-site/assets/index-500f1ce4.css">
   </head>
   <body>
     <header id="header" class="header">
-  <div class="container header-container">
-    <a href="">
+  <div class="container">
+    <a href="#">
       <div class="logo-container">
         <img
           class="logo-icon"
@@ -30,6 +30,11 @@
         />
       </div>
     </a>
+
+    <button type="button" class="menu-btn">
+      <span class="menuBtn__line">Menu</span>
+      <img class="arrow" src="/sayorama-site/assets/arrow-943fd7c8.svg" alt="arrow" />
+    </button>
 
     <nav class="nav">
       <ul class="nav-list">
@@ -53,15 +58,37 @@
         </li>
       </ul>
     </nav>
-    <a href="#contactUs">
-      <div class="contact-us-ref">Contact us</div>
-    </a>
+
+    <a class="contact-us-ref" href="#contactUs"> Contact us </a>
+
+    <div class="dropdown">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#about-us" class="nav-link">About us</a>
+        </li>
+        <li class="nav-item">
+          <a href="#product" class="nav-link">Products</a>
+        </li>
+        <li class="nav-item">
+          <a href="#demo" class="nav-link">Demo</a>
+        </li>
+        <li class="nav-item">
+          <a href="#investments" class="nav-link">Invest</a>
+        </li>
+        <li class="nav-item">
+          <a href="#partnership" class="nav-link">Partnership</a>
+        </li>
+        <li class="nav-item">
+          <a href="#career" class="nav-link">Career</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </header>
 
     <main>
       <section id="hero" class="hero">
-  <div class="hero-container container">
+  <div class="container">
     <h1 class="hero-title">
       <span class="hero-title__first">We are</span>
       <span class="hero-title__second">creating the</span>
@@ -87,7 +114,7 @@
         <a href="#" class="socials-link">
           <img
             class="socials-icon"
-            src="/sayorama-site/assets/linkedin-e4d9ea67.svg"
+            src="/sayorama-site/assets/linkedin-3f586bf4.svg"
             alt="linkedin"
           />
         </a>
@@ -107,7 +134,7 @@
 
       <section id="about-us" class="about-us">
   <div class="container about-container">
-    <h2 class="about-title">About us</h2>
+    <h2 class="section-title">About us</h2>
     <p class="about-intro">
       Welcome to Sayorama - a passionate Ukrainian cross-functional team
       dedicated to building digital products that matter.
@@ -130,28 +157,8 @@
         </div>
         <h4 class="team-role">Android developer</h4>
         <p class="role-description">
-          Mobile development for the Android platform is carried out using the
-          Flutter framework
-        </p>
-      </li>
-      <li class="role-card">
-        <div class="img-thumb">
-          <img src="/sayorama-site/assets/iOs-4582c815.svg" alt="iOS developer" />
-        </div>
-        <h4 class="team-role">IOS developer</h4>
-        <p class="role-description">
-          Mobile development for the iOS platform is carried out using the Swift
-          programming language
-        </p>
-      </li>
-      <li class="role-card">
-        <div class="img-thumb">
-          <img src="/sayorama-site/assets/QA-98e6bd89.svg" alt="QA tester" />
-        </div>
-        <h4 class="team-role">QA tester</h4>
-        <p class="role-description">
-          Manual and automated testing are performed to ensure software quality,
-          stability, and user satisfaction.
+          "I see challenges as fuel for building trustworthy solutions". Well,
+          developers write code—they don't have time for idle chatter!
         </p>
       </li>
       <li class="role-card">
@@ -167,22 +174,12 @@
       </li>
       <li class="role-card">
         <div class="img-thumb">
-          <img src="/sayorama-site/assets/backend-4685ff31.svg" alt="backend developer" />
-        </div>
-        <h4 class="team-role">Backend developer</h4>
-        <p class="role-description">
-          Server-side logic, databases, and APIs are developed to power
-          application functionality and performance.
-        </p>
-      </li>
-      <li class="role-card">
-        <div class="img-thumb">
           <img src="/sayorama-site/assets/frontend-b7adf0d1.svg" alt="frontend developer" />
         </div>
         <h4 class="team-role">Frontend developer</h4>
         <p class="role-description">
-          User interfaces are built with modern frameworks to ensure responsive,
-          accessible, and engaging web experiences.
+          "We bring pixels to life and turn code into magic. Your website looks
+          stunning and performs flawlessly on every device"
         </p>
       </li>
       <li class="role-card">
@@ -191,10 +188,42 @@
         </div>
         <h4 class="team-role">Project manager</h4>
         <p class="role-description">
-          Projects are planned, coordinated, and delivered on time by aligning
-          team efforts with client goals and expectations.
+          "I love it when things get done" Well, you understand that our PM only
+          talks about business, and that's why things almost always get done
         </p>
       </li>
+      <li class="role-card">
+        <div class="img-thumb">
+          <img src="/sayorama-site/assets/QA-98e6bd89.svg" alt="QA tester" />
+        </div>
+        <h4 class="team-role">QA tester</h4>
+        <p class="role-description">
+          "QA be like: We don't break the app — we just click buttons in ways no
+          one ever expected"
+        </p>
+      </li>
+      <li class="role-card">
+        <div class="img-thumb">
+          <img src="/sayorama-site/assets/iOs-4582c815.svg" alt="iOS developer" />
+        </div>
+        <h4 class="team-role">IOS developer</h4>
+        <p class="role-description">
+          Mobile development for the iOS platform is carried out using the Swift
+          programming language
+        </p>
+      </li>
+
+      <li class="role-card">
+        <div class="img-thumb">
+          <img src="/sayorama-site/assets/backend-4685ff31.svg" alt="backend developer" />
+        </div>
+        <h4 class="team-role">Backend developer</h4>
+        <p class="role-description">
+          Server-side logic, databases, and APIs are developed to power
+          application functionality and performance.
+        </p>
+      </li>
+
       <li class="role-card">
         <div class="img-thumb">
           <img src="/sayorama-site/assets/busines-analyst-a0f7437e.svg" alt="" />
@@ -220,7 +249,7 @@
   </div>
 </section>
 
-      <section id="product" class="product">
+      <!-- <section id="product" class="product">
   <h2 class="product-title">Our Flagman Product</h2>
   <div class="product-container container">
     <div class="content-wrapper">
@@ -247,13 +276,13 @@
         </p>
       </div>
       <div class="product-img">
-        <img src="/sayorama-site/assets/Product-desktop-7c9d4e9c.png" alt="app on mobile" />
+        <img src="./img/product/Product-desktop.png" alt="app on mobile" />
       </div>
     </div>
   </div>
 </section>
-
-      <section id="features">
+ -->
+      <!-- <section id="features">
   <div class="container features-container">
     <h2 class="features-title">
       Our product's Key Features & Differentiation:
@@ -262,7 +291,7 @@
       <li class="features-item">
         <img
           class="features-item-icon"
-          src="/sayorama-site/assets/encrypted-b8a1ef89.svg"
+          src="./img/features/encrypted.svg"
           alt="encrypted"
         />
         <div class="features-item-info">
@@ -283,7 +312,7 @@
       <li class="features-item">
         <img
           class="features-item-icon"
-          src="/sayorama-site/assets/networking-e60c33d5.svg"
+          src="./img/features/networking.svg"
           alt="networking"
         />
         <div class="features-item-info">
@@ -306,7 +335,7 @@
       <li class="features-item">
         <img
           class="features-item-icon"
-          src="/sayorama-site/assets/gear-5c84dc36.svg"
+          src="./img/features/gear.svg"
           alt="gear"
         />
         <div class="features-item-info">
@@ -327,7 +356,7 @@
       <li class="features-item">
         <img
           class="features-item-icon"
-          src="/sayorama-site/assets/modules-5ac9b770.svg"
+          src="./img/features/modules.svg"
           alt="modules"
         />
         <div class="features-item-info">
@@ -350,20 +379,20 @@
     <button type="button" class="features-button">More details</button>
   </div>
 </section>
-
-      <section id="demo" class="demo">
+ -->
+      <!-- <section id="demo" class="demo">
   <div class="demo-container container">
     <div class="content-wrapper">
       <button type="button" class="play-btn">
-        <img class="icon" src="/sayorama-site/assets/play-btn-e2b215f7.svg" alt="play" />
+        <img class="icon" src="./img/demo/play-btn.svg" alt="play" />
         <p class="text">Watch our product demo</p>
       </button>
       <div class="player"></div>
     </div>
   </div>
 </section>
-
-      <section id="investments" class="investments">
+ -->
+      <!-- <section id="investments" class="investments">
   <h2 class="section-title">Why Invest in Us?</h2>
   <div class="investments-container container">
     <p class="intro">
@@ -375,7 +404,7 @@
       <li class="benefits-list-item">
         <img
           class="benefits-list-item__img"
-          src="/sayorama-site/assets/numb1-bd10902f.svg"
+          src="./img/investments/numb1.svg"
           alt="number one"
         />
         <h3 class="benefits-list-item__title">
@@ -392,7 +421,7 @@
       <li class="benefits-list-item">
         <img
           class="benefits-list-item__img"
-          src="/sayorama-site/assets/numb2-e307858c.svg"
+          src="./img/investments/numb2.svg"
           alt="number two"
         />
         <h3 class="benefits-list-item__title">A Growing Market</h3>
@@ -406,7 +435,7 @@
       <li class="benefits-list-item">
         <img
           class="benefits-list-item__img"
-          src="/sayorama-site/assets/numb3-7ba1986b.svg"
+          src="./img/investments/numb3.svg"
           alt="number three"
         />
         <h3 class="benefits-list-item__title">Unique Value Proposition</h3>
@@ -420,12 +449,12 @@
     </ul>
   </div>
 </section>
-
-      <section class="banner">
+ -->
+      <!-- <section class="banner">
   <div class="container">
     <img
       class="banner-img"
-      src="/sayorama-site/assets/3d-render-todo-38ed2e2d.png"
+      src="./img/banner/3d-render-todo.png"
       alt="3d-render-todo"
     />
     <p class="banner-text">
@@ -437,21 +466,21 @@
         <span class="form-link__text">Go to form</span>
         <img
           class="form-link__icon"
-          src="/sayorama-site/assets/Ads-click-0f879040.svg"
+          src="./img/hero/Ads-click.svg"
           alt="arrow_pointer"
         />
       </div>
     </a>
   </div>
 </section>
-
-      <section id="partnership" class="partnership">
+ -->
+      <!-- <section id="partnership" class="partnership">
   <div class="container">
     <h2 class="partnership-title">Partner Program</h2>
     <div class="content-wrapper">
       <img
         class="partnership-img"
-        src="/sayorama-site/assets/partners-25699bd6.jpg"
+        src="./img/partnership/partners.jpg"
         alt="partnership"
       />
       <div class="partnership-description">
@@ -495,8 +524,8 @@
     </div>
   </div>
 </section>
-
-      <section id="career" class="career">
+ -->
+      <!-- <section id="career" class="career">
   <div class="container">
     <h2 class="career-title">Career in Our Company</h2>
     <div class="careers-intro">
@@ -543,13 +572,13 @@
           </p>
           <ul class="requirements">
             <li class="requirements-item">
-              <img src="/sayorama-site/assets/Python-38e140c2.svg" alt="python" />
+              <img src="./img/career/Python.svg" alt="python" />
             </li>
             <li class="requirements-item">
-              <img src="/sayorama-site/assets/FastAPI-cda3ca25.svg" alt="FastAPI" />
+              <img src="./img/career/FastAPI.svg" alt="FastAPI" />
             </li>
             <li class="requirements-item">
-              <img src="/sayorama-site/assets/Git-0938b6c6.svg" alt="Git" />
+              <img src="./img/career/Git.svg" alt="Git" />
             </li>
           </ul>
         </div>
@@ -587,7 +616,7 @@
           <a href="#" class="invitation__link">
             <img
               class="invitation__icon"
-              src="/sayorama-site/assets/arrow-cbf143a0.svg"
+              src="./img/career/arrow.svg"
               alt="link arrow"
             />
           </a>
@@ -596,8 +625,8 @@
     </div>
   </div>
 </section>
-
-      <section id="contactUs" class="contactUs">
+ -->
+      <!-- <section id="contactUs" class="contactUs">
   <h2 class="contact-title">Contact Us</h2>
   <div class="container">
     <form class="contact-form">
@@ -644,20 +673,20 @@
     </p>
   </div>
 </section>
-
+ -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
   <div class="container">
     <a href="#">
       <div class="footer-logo-container">
         <img
           class="logo-icon"
-          src="/sayorama-site/assets/logo_icon-9485e51b.svg"
+          src="./img/header/logo_icon.svg"
           alt="logo icon"
         />
         <img
           class="logo-text"
-          src="/sayorama-site/assets/logo_txt -23a4f16b.svg"
+          src="./img/header/logo_txt .svg"
           alt="logo text"
         />
       </div>
@@ -696,7 +725,7 @@
           <a href="#" class="socials-link">
             <img
               class="socials-icon"
-              src="/sayorama-site/assets/linkedin-e4d9ea67.svg"
+              src="./img/socials/linkedin.svg"
               alt="linkedin"
             />
           </a>
@@ -705,7 +734,7 @@
           <a href="#" class="socials-link">
             <img
               class="socials-icon"
-              src="/sayorama-site/assets/youtube-9f0e9036.svg"
+              src="./img/socials/youtube.svg"
               alt="youtube"
             />
           </a>
@@ -721,6 +750,7 @@
       <form class="subscribe-form">
         <input
           class="subscribe-input"
+          name="email"
           type="email"
           placeholder="name@gmail.com"
         />
@@ -730,7 +760,7 @@
   </div>
   <p class="copyright">© Sayorama LCC, 2025</p>
 </footer>
-
+ -->
     
   </body>
 </html>
