@@ -1,13 +1,18 @@
 .investments .container {
   display: block;
-  padding-bottom: 48px;
-}
+  margin-bottom: 48px;
 
-@media screen and (min-width: 1200px) {
-  .investments .container {
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+}
+
+.investments .section-title {
+  margin-bottom: 32px;
+  @media (min-width: 768px) {
+    margin-bottom: 48px;
   }
 }
 
@@ -41,7 +46,7 @@
   margin-right: auto;
   padding: 0 44px;
 
-  background-image: url('../img/investments/arrow-mobile.svg');
+  background-image: url('./img/investments/arrow-mobile.svg');
   background-repeat: no-repeat;
   background-size: 95% 86%;
   background-position: center -24px;

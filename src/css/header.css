@@ -1,17 +1,36 @@
-.header {
-  padding: 24px 0;
-}
-
-.header-container {
+.header .container {
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  justify-content: flex-start;
+
+  background-image: url('../img/header/Decor-header.svg');
+  background-repeat: no-repeat;
+  background-size: 1440px 116px;
+  background-position: center top;
+
+  @media (min-width: 768px) {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: 1440px) {
+    background-size: 1920px 116px;
+    background-image: url('../img/header/Decor-header-big.svg');
+  }
 }
 
 .logo-container {
-  width: 56px;
+  width: 42px;
 
-  @media screen and (min-width: 1024px) {
+  @media (min-width: 768px) {
+    width: 56px;
+  }
+
+  @media (min-width: 1024px) {
     width: 184px;
     display: flex;
     align-items: center;
@@ -22,7 +41,7 @@
 .logo-text {
   display: none;
 
-  @media screen and (min-width: 1024px) {
+  @media (min-width: 1024px) {
     display: block;
     width: 120px;
     height: 20px;
@@ -30,7 +49,13 @@
 }
 
 .nav {
-  flex-basis: 535px;
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    flex-basis: 535px;
+    margin: 0 10px;
+  }
 }
 
 .nav-list {
@@ -44,23 +69,93 @@
   line-height: 1.1;
   &:hover,
   &:focus {
-    color: #0287df;
+    color: var(--clr-accent);
   }
 }
 
-.contact-us-ref {
-  font-weight: 500;
-  font-size: 16px;
-  color: var(--light-text);
+.menu-btn {
+  display: flex;
+  margin-left: 18px;
+  align-self: flex-end;
 
-  width: 116px;
-  height: 46px;
+  font-weight: 500;
+  font-size: 12px;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-btn.active .arrow {
+  transform: rotate(180deg);
+}
+
+/* Скрытое меню */
+.dropdown {
+  position: absolute;
+  top: 100%; /* меню ниже кнопки */
+  left: 20px;
+  width: 210px;
+  background-color: var(--background);
+  border: 1px solid var(--button-border);
+  border-radius: 6px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  opacity: 0;
+  transform: translateY(-10px); /* чуть выше, чем нужно */
+  pointer-events: none;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+/* Показанное меню */
+.dropdown.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdown .nav-list {
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.contact-us-ref {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: flex-end;
 
+  width: 97px;
+  height: 35px;
+  margin-left: auto;
+  padding: 8px 12px;
   border-radius: 8px;
-  background: linear-gradient(0deg, #5d97ec 0%, #0287df 59.13%, #045e99 100%);
+
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--light-text);
+
+  background: var(--button-text);
+
+  @media (min-width: 768px) {
+    width: 116px;
+    height: 46px;
+    padding: 12px 6px;
+    margin-left: 0;
+    align-self: center;
+
+    font-size: 16px;
+  }
 
   &:active {
     border: 2px solid var(--button-border);

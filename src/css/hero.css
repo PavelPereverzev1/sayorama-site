@@ -1,53 +1,75 @@
-.hero-container {
+.hero .container {
   height: 811px;
-  padding-top: 160px;
+  padding-top: 140px;
   background-image: url('../img/hero/hero_bg.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+
+  @media (min-width: 768px) {
+    padding-top: 160px;
+  }
+
+  @media (min-width: 1440px) {
+    height: 906px;
+    background-image: url('../img/hero/hero_bg_big.jpg');
+  }
 }
 
 .hero-title {
-  max-width: 795px;
+  max-width: 638px;
   margin-bottom: 16px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: 768px) {
+    max-width: 795px;
+  }
 }
 
 .hero-title__first {
   font-weight: 600;
-  font-size: 64px;
-  line-height: 1.1;
+  font-size: 40px;
   text-align: center;
   color: var(--light-text);
+  @media (min-width: 1024px) {
+    font-size: 64px;
+  }
 }
 
 .hero-title__second {
-  white-space: nowrap;
   font-weight: 600;
-  font-size: 48px;
-  line-height: 1.1;
+  font-size: 32px;
   text-align: center;
+  white-space: nowrap;
   color: var(--muted-text-and-element);
+  @media (min-width: 1024px) {
+    font-size: 48px;
+  }
 }
 
 .hero-text {
-  max-width: 496px;
+  max-width: 414px;
   margin-bottom: 64px;
   margin-left: auto;
   margin-right: auto;
 
   font-weight: 500;
-  font-size: 24px;
-  line-height: 1.1;
+  font-size: 18px;
   text-align: center;
   color: var(--light-text);
+
+  @media (min-width: 768px) {
+    max-width: 496px;
+    font-size: 24px;
+  }
 }
 
 .app-link {
-  margin-bottom: 200px;
-  width: 270px;
-  height: 76px;
+  margin-bottom: 250px;
+  width: 203px;
+  height: 57px;
   margin-left: auto;
   margin-right: auto;
 
@@ -60,6 +82,12 @@
   border-radius: 10px;
   background: var(--background);
 
+  @media (min-width: 768px) {
+    width: 270px;
+    height: 76px;
+    margin-bottom: 200px;
+  }
+
   &:active {
     width: 266px;
     box-shadow: inset 4px 4px 4px 0 rgba(81, 81, 81, 0.35);
@@ -68,11 +96,25 @@
 
 .app-link__text {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 24px;
   background: linear-gradient(0deg, #5d97ec 0%, #0287df 59.13%, #045e99 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+  }
+}
+
+.app-link__icon {
+  width: 24px;
+  height: 24px;
+
+  @media (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .hero-socials {
@@ -82,13 +124,27 @@
 }
 
 .socials-item {
-  width: 40px;
-  height: 40px;
-
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
   background-color: var(--background);
   border: 1px solid var(--button-border);
+
+  @media (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.socials-icon {
+  width: 16px;
+  height: 16px;
+
+  @media (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+  }
 }

@@ -1,67 +1,102 @@
 .about-container {
   padding: 120px 0;
-  background-image: url('../img/about-us/bg-top.svg');
+  background-image: url('./img/about-us/bg-top.svg');
   background-repeat: no-repeat;
   background-size: 1440px 265px;
-  background-position: center -8px;
+  background-position: center -7px;
+
+  @media (min-width: 1440px) {
+    background-image: url('./img/about-us/bg-top-big.svg');
+    background-size: 1920px 265px;
+    background-position: center -72px;
+  }
 }
 
-.about-title {
-  margin-bottom: 48px;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 1.1;
-  text-align: center;
-  color: var(--dark-text);
+.about-us .section-title {
+  margin-bottom: 32px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 48px;
+  }
 }
 
 .about-intro {
-  max-width: 903px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 600px;
+  margin-inline: auto;
   margin-bottom: 16px;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 1.1;
+  font-size: 16px;
   text-align: center;
-  color: var(--dark-text);
+
+  @media (min-width: 768px) {
+    max-width: 760px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 20px;
+    max-width: 903px;
+  }
 }
 
 .about-story,
 .about-mission {
   margin-bottom: 16px;
+  margin-inline: auto;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.1;
+  font-size: 12px;
   text-align: center;
-  color: var(--dark-text);
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.about-story {
+  max-width: 500px;
+
+  @media (min-width: 768px) {
+    max-width: 700px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 100%;
+  }
 }
 
 .about-mission {
-  max-width: 876px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 48px;
+  max-width: 600px;
+  margin-bottom: 24px;
+
+  @media (min-width: 768px) {
+    max-width: 700px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 876px;
+  }
 }
 
 .team-title {
   margin-bottom: 24px;
   font-weight: 600;
   font-size: 24px;
-  line-height: 1.1;
   text-align: center;
-  color: var(--dark-text);
 }
 
 .team-list {
-  max-width: 1096px;
+  max-width: 1286px;
   margin-left: auto;
   margin-right: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(276px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
   row-gap: 24px;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 1440px) {
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  }
 }
 
 .role-card {

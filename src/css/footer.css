@@ -194,6 +194,14 @@
   border: 1px solid var(--blur-color);
   background: var(--button-border);
 
+  &:active {
+    color: var(--clr-acccent);
+    border: 2px solid var(--button-border);
+    border-radius: 8px;
+    background-color: var(--background);
+    box-shadow: inset 4px 4px 4px 0 rgba(81, 81, 81, 0.35);
+  }
+
   @media (min-width: 768px) {
     width: 71px;
     height: 46px;

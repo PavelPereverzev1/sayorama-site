@@ -48,6 +48,7 @@
   --font-family: 'Manrope', sans-serif;
   --background: #fbfbfb;
   --background-accent1: #fef0f8;
+  --clr-accent: #0287df;
   --background-accent2: linear-gradient(
     360deg,
     #5a92eb 0%,
@@ -56,7 +57,13 @@
   );
   --dissable-fill: #8e8e8e;
   --button-border: rgba(164, 218, 255, 0.4);
-  --light-text: #fff;
+  --button-text: linear-gradient(
+    0deg,
+    #5d97ec 0%,
+    #0287df 59.13%,
+    #045e99 100%
+  );
+  --light-text: #ffffff;
   --dark-text: #000b1c;
   --muted-text-and-element: #5f6a76;
   --blur-color: rgba(255, 255, 255, 0.5);
@@ -101,25 +108,19 @@ body {
   padding-left: 16px;
   padding-right: 16px;
   min-width: 390px;
-}
 
-@media screen and (min-width: 768px) {
-  .container {
+  @media (min-width: 768px) {
     padding-left: 80px;
     padding-right: 80px;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .container {
+  @media (min-width: 1200px) {
     padding-left: 130px;
     padding-right: 130px;
   }
-}
 
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
+  @media (min-width: 1440px) {
+    max-width: 1920px;
   }
 }
 
@@ -127,10 +128,8 @@ body {
   font-weight: 600;
   font-size: 32px;
   text-align: center;
-}
 
-@media screen and (min-width: 1024px) {
-  .section-title {
+  @media (min-width: 768px) {
     font-size: 48px;
   }
 }
