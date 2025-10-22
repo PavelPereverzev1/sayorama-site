@@ -78,24 +78,36 @@
 }
 
 .team-title {
-  margin-bottom: 24px;
-  font-weight: 600;
-  font-size: 24px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 18px;
   text-align: center;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 600;
+  }
 }
 
 .team-list {
-  max-width: 1286px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
-  row-gap: 24px;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
   justify-content: center;
   align-items: center;
 
-  @media (min-width: 1440px) {
-    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  @media (max-width: 767px) {
+    max-width: 550px;
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: 1400px) {
+    max-width: 1286px;
   }
 }
 
@@ -105,27 +117,74 @@
   align-items: center;
 }
 
+.role-card.revealed {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 2s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .role-card > .img-thumb {
-  width: 140px;
-  height: 132px;
+  width: 105px;
+  height: 99px;
   margin-bottom: 16px;
+
+  @media (min-width: 1024px) {
+    width: 140px;
+    height: 132px;
+  }
 }
 
 .team-role {
-  margin-bottom: 16px;
-
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.1;
-  color: var(--dark-text);
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 12px;
   text-align: center;
+
+  @media (min-width: 1024px) {
+    font-size: 16px;
+  }
 }
 
 .role-description {
-  max-width: 276px;
+  max-width: 150px;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.1;
-  color: var(--dark-text);
+  font-size: 12px;
   text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 12px;
+    max-width: 190px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 330px;
+    font-size: 16px;
+  }
+}
+
+.more-btn {
+  margin-inline: auto;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background-color: transparent;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.more-btn__text {
+  font-weight: 500;
+  font-size: 12px;
 }

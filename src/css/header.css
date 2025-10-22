@@ -8,13 +8,14 @@
   background-image: url('../img/header/Decor-header.svg');
   background-repeat: no-repeat;
   background-size: 1440px 116px;
-  background-position: center top;
+  background-position: center -46px;
 
   @media (min-width: 768px) {
     justify-content: space-between;
     align-items: center;
     padding-top: 24px;
     padding-bottom: 24px;
+    background-position: center top;
   }
 
   @media (min-width: 1440px) {
