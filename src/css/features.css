@@ -1,45 +1,106 @@
-.features-container {
-  padding: 56px 0;
+.features {
   background-color: var(--background-accent1);
 }
 
-.features-list {
-  margin-bottom: 48px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 48px;
-}
-.features-title {
-  margin-bottom: 48px;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.1;
-  text-align: center;
-  color: var(--dark-text);
+.features .container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @media (min-width: 768px) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
 }
 
-.features-item-title {
+.features-title {
   margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    margin-bottom: 48px;
+    font-size: 24px;
+  }
+}
+
+.features-list {
+  max-width: 390px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 24px;
+
+  @media (min-width: 768px) {
+    max-width: 100%;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 48px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 48px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 1224px;
+    column-gap: 110px;
+    margin-inline: auto;
+  }
 }
 
 .features-item {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+
+  @media (max-width: 1199px) and (min-width: 768px) {
+    &:nth-child(even) {
+      margin-left: auto;
+    }
+  }
+
+  @media (min-width: 768px) {
+    max-width: 560px;
+    flex-direction: row;
+    gap: 24px;
+  }
 }
 
 .features-item-icon {
-  width: 64px;
-  height: 64px;
-  margin-right: 24px;
+  width: 56px;
+  height: 56px;
+  align-self: center;
+
+  @media (min-width: 768px) {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.features-item-title {
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 18px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
 }
 
 .features-item-description {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.1;
-  color: var(--dark-text);
+  font-size: 12px;
+
   &:not(:last-child) {
     margin-bottom: 12px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 16px;
   }
 }
 
@@ -61,7 +122,6 @@
   background: linear-gradient(0deg, #5d97ec 0%, #0287df 59.13%, #045e99 100%);
 
   &:active {
-    /* transform: scale(0.97); */
     border: 2px solid var(--button-border);
     box-shadow: 0 0 2px 1px rgba(81, 81, 81, 0.3);
   }
