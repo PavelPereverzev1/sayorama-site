@@ -1,32 +1,78 @@
 .banner {
-  .container {
-    display: flex;
-    align-items: center;
+  .wrapper {
+    width: 100%;
     background: linear-gradient(360deg, #5a92eb 0%, #5891e9 50%, #5d97ec 100%);
+  }
+
+  .container {
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 16px;
+    flex-wrap: wrap;
+
+    @media (min-width: 768px) {
+      padding: 0 7.8125% 0 7.8125%;
+      padding-bottom: 0;
+      flex-wrap: nowrap;
+    }
+
+    @media (min-width: 1440px) {
+      padding: 0 130px 0 130px;
+    }
   }
 }
 
 .banner-img {
-  width: 274px;
-  height: 276px;
-  object-fit: contain;
+  width: 144px;
+  height: 144px;
+  flex-shrink: 0;
+
+  @media (min-width: 768px) {
+    width: 193px;
+    height: 192px;
+    object-fit: contain;
+  }
+
+  @media (min-width: 1024px) {
+    width: 275px;
+    height: 274px;
+  }
 }
 
 .banner-text {
-  max-width: 452px;
+  flex-basis: 59%;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 1.1;
+  font-size: 16px;
+  text-align: center;
   color: var(--light-text);
+
+  @media (min-width: 768px) {
+    max-width: 391px;
+    margin-right: 16px;
+    font-size: 20px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 452px;
+    font-size: 24px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 891px;
+  }
 }
 
 .form-link {
-  margin-left: auto;
+  @media (min-width: 768px) {
+    margin-left: auto;
+  }
 }
 
 .form-link__wrapper {
-  width: 242px;
-  height: 76px;
+  width: 182px;
+  height: 57px;
 
   display: flex;
   align-items: center;
@@ -37,17 +83,41 @@
   border-radius: 10px;
   background: var(--background);
 
+  @media (min-width: 768px) {
+    width: 242px;
+    height: 76px;
+    margin-left: auto;
+  }
+
   &:active {
-    width: 238px;
+    width: 178px;
     box-shadow: inset 4px 4px 4px 0 rgba(81, 81, 81, 0.35);
+
+    @media (min-width: 768px) {
+      width: 238px;
+    }
   }
 }
 
 .form-link__text {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 24px;
   background: linear-gradient(0deg, #5d97ec 0%, #0287df 59.13%, #045e99 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+  }
+}
+
+.form-link__icon {
+  width: 28px;
+  height: 28px;
+
+  @media (min-width: 768px) {
+    width: 32px;
+    height: 32px;
+  }
 }
