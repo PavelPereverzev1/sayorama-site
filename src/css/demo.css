@@ -149,3 +149,14 @@
     width: 100%;
   }
 }
+
+.decor-wrapper {
+  background-image: url('../img/demo/Decor-lines-small.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+
+  @media (min-width: 1024px) {
+    background-image: url('../img/demo/Decor-lines-med.svg');
+  }
+}

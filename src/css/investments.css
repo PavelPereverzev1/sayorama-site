@@ -1,6 +1,6 @@
 .investments .container {
   display: block;
-  margin-bottom: 48px;
+  padding-bottom: 48px;
 
   @media screen and (min-width: 1200px) {
     display: flex;
