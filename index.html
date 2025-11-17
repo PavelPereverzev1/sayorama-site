@@ -10,8 +10,8 @@
     />
     
     <title>Vite App</title>
-    <script type="module" crossorigin src="/sayorama-site/assets/index-5cf33c76.js"></script>
-    <link rel="stylesheet" href="/sayorama-site/assets/index-759aff8b.css">
+    <script type="module" crossorigin src="/sayorama-site/assets/index-9661de75.js"></script>
+    <link rel="stylesheet" href="/sayorama-site/assets/index-4b6746fd.css">
   </head>
   <body>
     <header id="header" class="header">
@@ -87,6 +87,29 @@
 </header>
 
     <main>
+      <nav id="floating-nav" class="hidden floating-nav">
+  <ul class="nav-list">
+    <li class="nav-item">
+      <a href="#about-us" class="nav-link">About us</a>
+    </li>
+    <li class="nav-item">
+      <a href="#product" class="nav-link">Products</a>
+    </li>
+    <li class="nav-item">
+      <a href="#demo" class="nav-link">Demo</a>
+    </li>
+    <li class="nav-item">
+      <a href="#investments" class="nav-link">Invest</a>
+    </li>
+    <li class="nav-item">
+      <a href="#partnership" class="nav-link">Partnership</a>
+    </li>
+    <li class="nav-item">
+      <a href="#career" class="nav-link">Career</a>
+    </li>
+  </ul>
+</nav>
+
       <section id="hero" class="hero">
   <div class="container">
     <h1 class="hero-title">
@@ -99,7 +122,12 @@
     <p class="hero-text">
       It is currently in closed beta testing. Want to learn more or invest?
     </p>
-    <a href="#">
+    <a
+      href="https://sayoramachat.xyz/"
+      class="hero-app-link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <div class="app-link">
         <span class="app-link__text">Get in touch</span>
         <img
@@ -111,7 +139,12 @@
     </a>
     <ul class="hero-socials">
       <li class="socials-item">
-        <a href="#" class="socials-link">
+        <a
+          href="https://www.linkedin.com/company/sayorama/"
+          class="socials-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             class="socials-icon"
             src="/sayorama-site/assets/linkedin-3f586bf4.svg"
@@ -385,9 +418,9 @@
 </section>
 
       <div class="decor-wrapper">
-        <section id="demo" class="demo">
+        <section class="demo">
   <div class="container">
-    <div class="content-wrapper">
+    <div id="demo" class="content-wrapper">
       <div class="play-btn-wrapper">
         <button type="button" class="play-btn">
           <img class="icon" src="/sayorama-site/assets/play-btn-25b50147.svg" alt="play" />
@@ -642,7 +675,7 @@
             Come build the future of business communication with us Fill out the
             form below and become part of our team
           </p>
-          <a href="#" class="invitation__link">
+          <a href="#contactUs" class="invitation__link">
             <img
               class="invitation__icon"
               src="/sayorama-site/assets/arrow-cbf143a0.svg"
@@ -655,37 +688,55 @@
   </div>
 </section>
 
-      <!-- <section id="contactUs" class="contactUs">
-  <h2 class="contact-title">Contact Us</h2>
+      <section id="contactUs" class="contactUs">
+  <h2 class="section-title">Contact Us</h2>
   <div class="container">
-    <form class="contact-form">
+    <form class="contact-form" novalidate>
       <label>
         Select the subject of your request*:
-        <select required>
-          <option value="">The drop-down list</option>
-          <option value="support">Support</option>
-          <option value="partnership">Partnership</option>
-          <option value="other">Other</option>
-        </select>
+        <div class="input-wrapper">
+          <select name="subject" class="select" required>
+            <option value="" disabled selected hidden>Select a topic</option>
+            <option value="support">Support</option>
+            <option value="partnership">Partnership</option>
+            <option value="other">Other</option>
+          </select>
+          <span class="icon arrow"></span>
+        </div>
       </label>
 
       <label>
         Your e-mail*:
         <div class="input-wrapper">
-          <input type="email" placeholder="name@gmail.com" required />
+          <input
+            name="email"
+            type="email"
+            placeholder="name@gmail.com"
+            autocomplete="email"
+            required
+          />
+          <span class="icon email"></span>
         </div>
       </label>
 
       <label>
         Your phone*:
         <div class="input-wrapper">
-          <input type="tel" placeholder="+00 000 0000000" required />
+          <input
+            name="phone"
+            type="tel"
+            placeholder="+00 000 0000000"
+            autocomplete="tel"
+            required
+          />
+          <span class="icon phone"></span>
         </div>
       </label>
 
       <label>
         Your question/suggestion:
         <input
+          name="message"
           type="text"
           placeholder="Short text (max 150 characters)"
           maxlength="150"
@@ -702,7 +753,7 @@
     </p>
   </div>
 </section>
- -->
+
     </main>
     <footer class="footer">
   <div class="container">
@@ -751,7 +802,12 @@
       <h3 class="socials-title">Our social media:</h3>
       <ul class="socials-list">
         <li class="socials-item">
-          <a href="#" class="socials-link">
+          <a
+            href="https://www.linkedin.com/company/sayorama/"
+            class="socials-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               class="socials-icon"
               src="/sayorama-site/assets/linkedin-3f586bf4.svg"
@@ -776,13 +832,15 @@
         Leave your email below - we'll get in touch and explore how you can
         become part of Sayorama's journey:
       </p>
-      <form class="subscribe-form">
-        <input
-          class="subscribe-input"
-          name="email"
-          type="email"
-          placeholder="name@gmail.com"
-        />
+      <form class="subscribe-form" novalidate>
+        <div class="input-wrapper">
+          <input
+            class="subscribe-input"
+            name="email"
+            type="email"
+            placeholder="name@gmail.com"
+          />
+        </div>
         <button class="subscribe-button" type="submit">Send</button>
       </form>
     </div>
