@@ -1,0 +1,54 @@
+.floating-nav {
+  display: flex;
+
+  @media (min-width: 768px) {
+    width: 584px;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transition:
+      transform 0.45s ease,
+      opacity 0.45s ease;
+    z-index: 1000;
+
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid var(--button-border);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0 rgba(124, 124, 124, 0.25);
+  }
+
+  @media (min-width: 1024px) {
+    width: 656px;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 24px;
+
+    @media (min-width: 1024px) {
+      gap: 32px;
+    }
+  }
+}
+
+.floating-nav.visible {
+  transform: translate(-50%, 10%);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.floating-nav.hidden {
+  transform: translate(-50%, -100%);
+  opacity: 0;
+  pointer-events: none;
+}

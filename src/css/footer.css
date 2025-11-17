@@ -154,11 +154,16 @@
   justify-content: center;
   column-gap: 8px;
   flex-wrap: nowrap;
+
+  .input-wrapper {
+    flex-basis: 352px;
+    height: 35px;
+  }
 }
 
 .subscribe-input {
-  flex-basis: 352px;
-  height: 35px;
+  width: 100%;
+  height: 100%;
   padding: 12px 8px;
 
   border-radius: 6px;

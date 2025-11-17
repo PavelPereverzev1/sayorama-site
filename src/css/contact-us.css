@@ -1,52 +1,79 @@
 .contactUs {
-  padding-bottom: 120px;
+  padding-bottom: 64px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: 1024px) {
+    padding-bottom: 120px;
+  }
+
   .container {
     padding-top: 56px;
     padding-bottom: 56px;
 
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
 
     background-image: url('../img/contact-us/bg-img.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+
+    @media (min-width: 768px) {
+      padding-left: 7.8125%;
+      padding-right: 7.8125%;
+      flex-direction: row;
+      align-items: center;
+      gap: 8.398%;
+      justify-content: space-between;
+    }
   }
-}
 
-.contact-title {
-  margin-bottom: 32px;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 1.1;
-  text-align: center;
-  color: var(--dark-text);
-}
+  .section-title {
+    margin-bottom: 24px;
 
-.contact-content {
-  display: flex;
-  justify-content: space-between;
+    @media (min-width: 768px) {
+      margin-bottom: 32px;
+    }
+  }
 }
 
 .contact-form {
   flex-basis: 352px;
+  max-width: 352px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-inline: auto;
+
+  label {
+    display: block;
+    margin-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--light-text);
+  }
 }
 
-.contact-form label {
-  display: block;
-  margin-bottom: 32px;
+.select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.1;
-  color: var(--light-text);
+  color: var(--dark-text);
+}
+
+.select:has(option[value='']:checked) {
+  color: var(--muted-text-and-element);
 }
 
 .contact-form input,
 .contact-form select {
   width: 100%;
-  padding: 10px 40px 10px 10px;
+  height: 48px;
+  padding: 12px 8px;
   margin-top: 5px;
   border: none;
   border-radius: 6px;
@@ -57,16 +84,31 @@
   position: relative;
 }
 
-.input-wrapper input {
-  padding-right: 35px;
-}
-
 .input-wrapper .icon {
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+
   position: absolute;
   right: 10px;
-  top: 50%;
+  top: 54%;
   transform: translateY(-50%);
   pointer-events: none;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &.arrow {
+    background-image: url('../img/contact-us/arrow-down.svg');
+  }
+
+  &.email {
+    background-image: url('../img/contact-us/email.svg');
+  }
+
+  &.phone {
+    background-image: url('../img/contact-us/phone.svg');
+  }
 }
 
 .btn-send {
@@ -92,14 +134,42 @@
 }
 
 .contact-text {
-  flex-basis: 660px;
+  order: -1;
+  margin-bottom: 48px;
+
   font-weight: 600;
-  font-size: 48px;
-  line-height: 1.1;
+  font-size: 32px;
   text-align: center;
   color: var(--light-text);
+
+  @media (min-width: 768px) {
+    order: 0;
+    margin-bottom: 0;
+    flex-basis: 660px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 48px;
+  }
+
+  @media (min-width: 1440px) {
+    flex-basis: 930px;
+  }
 }
 
 .contact-text .highlight {
   color: var(--muted-text-and-element);
+}
+
+.input-wrapper input.error,
+.input-wrapper select.error {
+  border: 1px solid;
+  border-color: var(--error);
+}
+
+.error-message {
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--error);
 }

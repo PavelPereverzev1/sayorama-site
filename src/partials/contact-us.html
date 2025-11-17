@@ -1,34 +1,52 @@
 <section id="contactUs" class="contactUs">
-  <h2 class="contact-title">Contact Us</h2>
+  <h2 class="section-title">Contact Us</h2>
   <div class="container">
-    <form class="contact-form">
+    <form class="contact-form" novalidate>
       <label>
         Select the subject of your request*:
-        <select required>
-          <option value="">The drop-down list</option>
-          <option value="support">Support</option>
-          <option value="partnership">Partnership</option>
-          <option value="other">Other</option>
-        </select>
+        <div class="input-wrapper">
+          <select name="subject" class="select" required>
+            <option value="" disabled selected hidden>Select a topic</option>
+            <option value="support">Support</option>
+            <option value="partnership">Partnership</option>
+            <option value="other">Other</option>
+          </select>
+          <span class="icon arrow"></span>
+        </div>
       </label>
 
       <label>
         Your e-mail*:
         <div class="input-wrapper">
-          <input type="email" placeholder="name@gmail.com" required />
+          <input
+            name="email"
+            type="email"
+            placeholder="name@gmail.com"
+            autocomplete="email"
+            required
+          />
+          <span class="icon email"></span>
         </div>
       </label>
 
       <label>
         Your phone*:
         <div class="input-wrapper">
-          <input type="tel" placeholder="+00 000 0000000" required />
+          <input
+            name="phone"
+            type="tel"
+            placeholder="+00 000 0000000"
+            autocomplete="tel"
+            required
+          />
+          <span class="icon phone"></span>
         </div>
       </label>
 
       <label>
         Your question/suggestion:
         <input
+          name="message"
           type="text"
           placeholder="Short text (max 150 characters)"
           maxlength="150"
