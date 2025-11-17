@@ -33,13 +33,11 @@ window.addEventListener('scroll', () => {
 
   clearTimeout(timeoutId);
 
-  timeoutId = setTimeout(() => {
-    if (scrollingUp) {
-      showFloatingNav();
-    } else {
-      hideFloatingNav();
-    }
-  }, DELAY);
+  if (scrollingUp) {
+    showFloatingNav();
+  } else {
+    hideFloatingNav();
+  }
 
   lastScroll = currentScroll;
 });
