@@ -11,7 +11,7 @@
     
     <title>Vite App</title>
     <script type="module" crossorigin src="/sayorama-site/assets/index-fa0ff149.js"></script>
-    <link rel="stylesheet" href="/sayorama-site/assets/index-4b6746fd.css">
+    <link rel="stylesheet" href="/sayorama-site/assets/index-3c3cdc6d.css">
   </head>
   <body>
     <header id="header" class="header">
@@ -88,6 +88,9 @@
 
     <main>
       <nav id="floating-nav" class="hidden floating-nav">
+  <div class="liquidGlass-effect"></div>
+  <div class="liquidGlass-tint"></div>
+  <div class="liquidGlass-shine"></div>
   <ul class="nav-list">
     <li class="nav-item">
       <a href="#about-us" class="nav-link">About us</a>
@@ -109,6 +112,62 @@
     </li>
   </ul>
 </nav>
+
+<svg style="display: none">
+  <filter
+    id="glass-distortion"
+    x="0%"
+    y="0%"
+    width="100%"
+    height="100%"
+    filterUnits="objectBoundingBox"
+  >
+    <feTurbulence
+      type="fractalNoise"
+      baseFrequency="0.01 0.01"
+      numOctaves="1"
+      seed="5"
+      result="turbulence"
+    />
+
+    <feComponentTransfer in="turbulence" result="mapped">
+      <feFuncR type="gamma" amplitude="1" exponent="6" offset="0.5" />
+      <feFuncG type="gamma" amplitude="0" exponent="1" offset="0" />
+      <feFuncB type="gamma" amplitude="0" exponent="1" offset="0.5" />
+    </feComponentTransfer>
+
+    <feGaussianBlur in="turbulence" stdDeviation="2" result="softMap" />
+
+    <feSpecularLighting
+      in="softMap"
+      surfaceScale="5"
+      specularConstant="1"
+      specularExponent="100"
+      lighting-color="white"
+      result="specLight"
+    >
+      <fePointLight x="-200" y="-200" z="300" />
+    </feSpecularLighting>
+
+    <feComposite
+      in="specLight"
+      operator="arithmetic"
+      k1="0"
+      k2="1"
+      k3="1"
+      k4="0"
+      result="litImage"
+    />
+
+    <feDisplacementMap
+      in="SourceGraphic"
+      in2="softMap"
+      scale="30"
+      xChannelSelector="R"
+      yChannelSelector="G"
+    />
+  </filter>
+</svg>
 
       <section id="hero" class="hero">
   <div class="container">
@@ -699,6 +758,8 @@
             <option value="" disabled selected hidden>Select a topic</option>
             <option value="support">Support</option>
             <option value="partnership">Partnership</option>
+            <option value="career">Career</option>
+            <option value="investments">Investments</option>
             <option value="other">Other</option>
           </select>
           <span class="icon arrow"></span>
